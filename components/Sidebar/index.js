@@ -24,15 +24,15 @@ function Sidebar() {
           </Link>
           <br></br>
           <Link href="/Booking" legacyBehavior>
-            <button className={sidebarStyle.button}> Booking Order </button>
+            <button className={sidebarStyle.button}> Successful Booking  </button>
           </Link>
           <br></br>
           <Link href="/pending" legacyBehavior>
-            <button className={sidebarStyle.button}> Pending Order </button>
+            <button className={sidebarStyle.button}> Pending Booking </button>
           </Link>
           <br></br>
           <Link href="/Cancelled" legacyBehavior>
-            <button className={sidebarStyle.button}> Cancelled Order </button>
+            <button className={sidebarStyle.button}> Cancelled Booking </button>
           </Link>
           <br></br>
           <Link href="/Review" legacyBehavior>

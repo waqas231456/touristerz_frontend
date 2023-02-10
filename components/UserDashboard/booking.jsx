@@ -10,7 +10,7 @@ function Booking() {
     // console.log("i amahere")
     const getdata = async () => {
       try {
-        axios.get(`http://localhost:5000/api/user/3`).then((res) => {
+        axios.get(`http://localhost:5000/api/user/4`).then((res) => {
           console.log(res.data);
           setData(res.data);
         });
@@ -25,7 +25,7 @@ function Booking() {
     <Layout>
       <div className={Style.Booking}>
         <div>
-          <h1 className={Style.h1}>Booked Tours</h1>
+          <h1 className={Style.h1}> Successful Booked </h1>
           <table className={Style.table}>
             <thead>
               <tr className={Style.tr}>

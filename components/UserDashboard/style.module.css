@@ -23,6 +23,7 @@
 
   .text{
     color: white;
+
   }
 
   
@@ -51,7 +52,7 @@
     margin: 10% 5% 10% 0 ;
     padding: 5px;
     height: 42%;
-    
+    text-align: left;
     box-shadow: 8px 8px 8px #ffa17a;
     border-radius: 10px;
     background-color: rgb(165, 65, 65); 
@@ -69,5 +70,6 @@
     background-color: rgb(165, 65, 65); 
     border: 3px solid #ffa17a;
     border-radius: 10px;
+    text-align: left;
   }
   

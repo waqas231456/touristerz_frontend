@@ -6,26 +6,16 @@ import axios from "axios";
 import { useEffect,useState } from "react";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Review() {
-  const [ratinData, setRatingData] = useState({rating :"" });
-  const [commentData, setCommentData] = useState({comment :"" });
-
-  
-
-  const handleChange = (event) => {
- 
-    console.log(commentData)
-    console.log(ratinData)
-  };
+  const [reviewData, setReviewData] = useState({rating:'',comment:''})
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/sign-up",
-        formData
+      const res = await axios.get(
+        "http://localhost:5000/api/review/1/2",
+        reviewData
       );
-      console.log("data :", res.data);
+      console.log("data :", res);
     } catch (err) {
       console.log(err);
     }
@@ -41,7 +31,7 @@ function Review() {
         and customer services.
       </h6>
 
-      <form className={Style.feedback} action="">
+      <form className={Style.feedback} onSubmit={handleSubmit}>
         <div className={Style.pinfo}>Rate our overall services.</div>
 
         <div className={Style.formgroup}>
@@ -51,7 +41,8 @@ function Review() {
                 <i className="fa fa-heart"></i>
               </span>
               <select className={Style.formcontrol} id="rate" 
-              onChange={(e)=>setRatingData(e.target.value)}>
+              
+              onChange={(e)=>setReviewData({...reviewData,rating:e.target.value })}>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -68,14 +59,13 @@ function Review() {
           <div className={Style.inputGroupContainer}>
             <div className={Style.inputgroup}>
               <span className={Style.inputgroupaddon}>
-                {/* <i className=fa fa-pencil"></i> */}
               </span>
               <textarea
                 className={Style.formcontrol}
                 id="review"
                 rows="3"
-                onChange={handleChange}
-                value={(e)=>setCommentData(e.target.value)}
+                onChange={(e)=>setReviewData({...reviewData,comment:e.target.value })}
+                value={reviewData.comment}
               ></textarea>
             </div>
           </div>

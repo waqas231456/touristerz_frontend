@@ -25,7 +25,7 @@ function Pending() {
   <Layout>
       <div className={Style.Pending}>
         <div>
-          <h1 className={Style.h1}>Pending</h1>
+          <h1 className={Style.h1}>Pending Booking</h1>
           <table className={Style.table}>
             <thead>
               <tr className={Style.tr}>

@@ -25,7 +25,7 @@ function Cancelled() {
   <Layout>
       <div className={Style.Cancelled}>
         <div>
-          <h1 className={Style.h1}>Cancelled</h1>
+          <h1 className={Style.h1}>Cancelled Booking</h1>
           <table className={Style.table}>
             <thead>
               <tr className={Style.tr}>

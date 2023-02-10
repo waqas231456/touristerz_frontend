@@ -16,16 +16,20 @@
   }
   
   .td {
-    border: 1px solid #ffa17a;
+    border: 4px solid #000000;
     text-align: left;
     padding: 15px;
-    
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 10px;
+    text-align: bold;
   }
   .th {
-    border: 1px solid #ffa17a;
+    border: 4px solid #000000;
     text-align: left;
     padding: 15px;
-  
+    box-sizing: border-box;
+    box-shadow: 10px;
   }
   
   .tr:nth-child(even) {
