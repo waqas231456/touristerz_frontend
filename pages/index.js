@@ -1,8 +1,7 @@
 import Head from 'next/head'
 
-
-import { Button, UserDashboard } from '@/components'
-import Layout from '@/components/Layout'
+import { UserDashboard } from '@/components'
+import Head from 'next/head'
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        
         <UserDashboard/>
       </main>
     </>
