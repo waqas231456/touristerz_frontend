@@ -1,0 +1,65 @@
+.flex {
+  position: relative;
+  /* display: flex; */
+  /* margin-right: 1930px; */
+  float: left;
+  width: 25%;
+ padding-bottom: 3%;
+padding-top: 2%;
+  background: white;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  /* background-color: rgb(53, 150, 241); */
+}
+
+.img {
+  margin-top: 10px;
+  float: left;
+  margin-right: 75%;
+}
+.logo {
+  /* text-align: center; */
+  margin-left: 60px;
+  margin-right: 45px;
+  padding-left: 25px;
+  padding-right: 5px;
+}
+.avator {
+  margin-left: 130px;
+}
+
+.h3 {
+  padding-left: 88px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200px;
+  font-size: 20px;
+}
+
+.button {
+  margin-top: 20px;
+  /* margin-right: 1300px; */
+  margin-right: 1100px;
+  margin-left: 50px;
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  inset-block: 10px;
+  color: #ffa17a;
+  border-color: #ffa17a;
+  font-size: 20px;
+
+  /* text-decoration:none;
+      text-decoration-line: underline; */
+}
+
+.button:hover {
+  background-color: rgb(165, 65, 65);
+}
+.p {
+  margin-right: 1350px;
+  color: dimgrey;
+}

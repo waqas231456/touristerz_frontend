@@ -1,0 +1,43 @@
+.Cancelled{
+    /* background-color: #eef0eb; */
+    margin-top: 40px;
+    height: 90%;
+    
+    
+}
+
+
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ffa17a;
+    
+  }
+  
+  .td {
+    border: 1px solid #ffa17a;
+    text-align: left;
+    padding: 15px;
+    
+  }
+  .th {
+    border: 1px solid #ffa17a;
+    text-align: left;
+    padding: 15px;
+    
+  
+  }
+  
+  .tr:nth-child(even) {
+    background-color: #ffa17a;
+
+  }
+  .h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200px;
+    font-size: 65px;
+    text-align: center;
+   
+  }
