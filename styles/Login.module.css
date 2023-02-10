@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+.log {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+.box {
+  width: 398px;
+  height: 408px;;
+  background: white;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+}
+
+.text {
+  justify-content: center;
+  margin-left: 128px;
+  margin-bottom: 10px;
+}
+.p {
+  justify-content: center;
+  margin-left: 75px;
+  margin-bottom: 10px;
+}
+
+.p1 {
+  justify-content: center;
+  margin-left: 41px;
+  margin-top: 45px;
+  display: flex;
+}
+
+
+.signin {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.label {
+  color: #39b597;
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 43px 53px 15px 57px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.input {
+  width: 75%;
+  height: 29px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.select {
+  width: 66%;
+  height: 40px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
