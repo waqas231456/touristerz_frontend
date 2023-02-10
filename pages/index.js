@@ -1,8 +1,11 @@
-import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
-
-import { Button } from '@/components'
+import Card from '@/components/Dashboard'
 import Layout from '@/components/Layout'
+import Head from 'next/head'
+import AddCategory from './Categories'
+import ForgotPassword from './ResetPassword'
+import Login from './Login'
+import ManageProfile from './ManageProfile'
+import Signup from './SignUp'
 
 export default function Home() {
   return (
@@ -13,10 +16,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Layout>
-          <h1>Home Page</h1>
-        </Layout>
+      <main >
+{/*    
+    <Card/> */}
+    <AddCategory/>
+     
+          
+      
       </main>
     </>
   )
