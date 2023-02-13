@@ -255,9 +255,23 @@
   }
 
 
-  .Button{
-    border-radius: 20px;
-  }
+  .button{
+    width: 80%;
+    height: 45px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #ffa17a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	border: 1.5px solid #ffa17a;
+   border-radius: 10px;
+	
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+  
   
   /* .Button {
     display: inline-block;
