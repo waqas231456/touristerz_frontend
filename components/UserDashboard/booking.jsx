@@ -3,6 +3,7 @@ import axios from "axios";
 import Layout from "../Layout";
 import Style from "./styleb.module.css";
 import { useEffect } from "react";
+import Link from "next/link";
 function Booking() {
   const [data, setData] = useState([]);
 
@@ -34,7 +35,7 @@ function Booking() {
                 <th className={Style.th}>post_id</th>
                 <th className={Style.th}>status</th>
                 <th className={Style.th}>user_id</th>
-               
+                <th className={Style.th}>Action</th>
 
               </tr>
             </thead>
@@ -47,6 +48,9 @@ function Booking() {
 
                   <td className={Style.td}>{data.status}</td>
                   <td className={Style.td}>{data.user_id}</td>
+                 <Link  href="/Review" >
+                 <div className={Style.td}>Review</div>
+                  </Link>
                 </tr>
               ))}
             </tbody>

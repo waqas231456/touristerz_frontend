@@ -11,7 +11,7 @@ function Review() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.get(
+      const res = await axios.post(
         "http://localhost:5000/api/review/1/2",
         reviewData
       );
@@ -27,8 +27,7 @@ function Review() {
       
       <h2 className={Style.fh2} >WE APPRECIATE YOUR REVIEW!</h2>
       <h6 className={Style.fh2} >
-        Your review will help us to improve our web hosting quality products,
-        and customer services.
+        Your review will help us to improve our Services.
       </h6>
 
       <form className={Style.feedback} onSubmit={handleSubmit}>

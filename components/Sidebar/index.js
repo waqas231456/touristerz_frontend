@@ -35,9 +35,9 @@ function Sidebar() {
             <button className={sidebarStyle.button}> Cancelled Booking </button>
           </Link>
           <br></br>
-          <Link href="/Review" legacyBehavior>
+          {/* <Link href="/Review" legacyBehavior>
             <button className={sidebarStyle.button}>Reviews</button>
-          </Link>
+          </Link> */}
           <br></br>
 
           {/* <p style={{ marginLeft: "8%" }}>

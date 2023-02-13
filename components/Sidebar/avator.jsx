@@ -6,7 +6,7 @@ export default function Avatar (props) {
     return( 
         <>
 
-         <Image src={profile} alt="" style={{borderRadius:"100%" , height:"150px",  width:"150px", backgroundColor:"aquamarine"} } className={props.avator} /> <br></br>
+         <Image src={profile} alt="" style={{borderRadius:"100%" , height:"150px",  width:"150px", backgroundColor:"white"} } className={props.avator} /> <br></br>
   
 
         </>
