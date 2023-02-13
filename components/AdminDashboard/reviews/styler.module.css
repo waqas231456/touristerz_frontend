@@ -1,0 +1,335 @@
+.feedback {
+    max-width: 60%;
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+    border: solid 1px #f1f1f1;
+    background: #fbfbfb;
+    box-shadow: #e6e6e6 0 0 4px ;
+    border-radius: 0.25rem;
+  }
+  
+  @media (max-width: 720px) {
+    #feedback{
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #feedback{
+      padding: 10px;
+    }
+  }
+  
+  .fh2{
+   padding: 2px 15px;
+   color: #ffa17a;
+   text-align: center;
+   
+   
+  }
+  
+  @media (max-width: 400px) {
+    .fh2{
+      font-size: 20px;
+    }
+  }
+  
+  
+  .fh6 {
+   padding: 2px 15px;
+   color: #6C6262;
+   text-align: center;
+   font-weight: normal;
+  }
+  
+  @media (max-width: 400px) {
+    #fh6{
+      font-size: 12px;
+    }
+  }
+  
+  .pinfo {
+   margin: 8px auto;
+   font-weight: bold;
+   line-height: 1.5;
+   color: #0d0d0d;
+  }
+  .formgroup {
+    margin-bottom: 1rem;
+  }
+    
+  .formcontrol {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    font-weight: bold;
+    color: #6C6262;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  }
+  
+  .formcontrol::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .formcontrol:focus {
+    color: #696060;
+    background-color: #fff;
+    border-color: #5cb3fd;
+    outline: none;
+  }
+  
+  .formcontrol::-webkit-input-placeholder {
+    color: #F34949;
+    opacity: 1;
+  }
+  
+  .formcontrol::-moz-placeholder {
+    color: brown;
+    opacity: 1;
+  }
+  
+  .formcontrol:-ms-input-placeholder {
+    color: blue;
+    opacity: 1;
+  }
+  
+  .formcontrol::placeholder {
+    color: white;
+    opacity: 1;
+  }
+  
+  .formcontrol:disabled, .formcontrol[readonly] {
+    background-color: red;
+    opacity: 1;
+  }
+  
+  .formcontrol:disabled {
+    cursor: not-allowed;
+  }
+  
+  select.formcontrol:not([size]):not([multiple]) {
+    height: calc(2.25rem + 2px);
+  }
+  
+  select.formcontrol:focus::-ms-value {
+    color: green;
+    background-color: #fff;
+  }
+  
+  .formcontrol-file,
+  .formcontrol-range {
+    display: block;
+  }
+  
+  .inputgroup {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  
+  .inputgroup .formcontrol {
+    position: relative;
+    z-index: 2;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+  }
+  
+  .inputgroup .formcontrol:focus, .inputgroup .formcontrol:active, .inputgroup .formcontrol:hover {
+    z-index: 3;
+  }
+  
+  .inputgroupaddon,
+  .inputgroup-btn,
+  .inputgroup .formcontrol {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .inputgroupaddon:not(:first-child):not(:last-child),
+  .inputgroup-btn:not(:first-child):not(:last-child),
+  .inputgroup .formcontrol:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  
+  .inputgroupaddon,
+  .inputgroup-btn {
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  
+  .inputgroupaddon {
+    width: 45px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.25;
+    color: #2e2e2e;
+    text-align: center;
+    background-color: #eceeef;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+  }
+  
+  .inputgroupaddon.formcontrol-sm,
+  .inputgroup-sm > .inputgroupaddon,
+  .inputgroup-sm > .inputgroup-btn > .inputgroupaddon.Button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+  }
+  
+  .inputgroupaddon.formcontrol-lg,
+  .inputgroup-lg > .inputgroupaddon,
+  .inputgroup-lg > .inputgroup-btn > .inputgroupaddon.Button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+  }
+  
+  .inputgroupaddon input[type="radio"],
+  .inputgroupaddon input[type="checkbox"] {
+    margin-top: 0;
+  }
+  
+  .inputgroup .formcontrol:not(:last-child),
+  .inputgroupaddon:not(:last-child),
+  .inputgroup-btn:not(:last-child) > .Button,
+  .inputgroup-btn:not(:last-child) > .Button-group > .Button,
+  .inputgroup-btn:not(:last-child) > .dropdown-toggle,
+  .inputgroup-btn:not(:first-child) > .Button:not(:last-child):not(.dropdown-toggle),
+  .inputgroup-btn:not(:first-child) > .Button-group:not(:last-child) > .Button {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .inputgroupaddon:not(:last-child) {
+    border-right: 0;
+  }
+  
+  .inputgroup .formcontrol:not(:first-child),
+  .inputgroupaddon:not(:first-child),
+  .inputgroup-btn:not(:first-child) > .Button,
+  .inputgroup-btn:not(:first-child) > .Button-group > .Button,
+  .inputgroup-btn:not(:first-child) > .dropdown-toggle,
+  .inputgroup-btn:not(:last-child) > .Button:not(:first-child),
+  .inputgroup-btn:not(:last-child) > .Button-group:not(:first-child) > .Button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+  .formcontrol + .inputgroupaddon:not(:first-child) {
+    border-left: 0;
+  }
+
+
+  .Button{
+    border-radius: 20px;
+  }
+  
+  /* .Button {
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .Button:focus, .Button:hover {
+    text-decoration: none;
+  } */
+  
+  /* .Button:focus, .Button.focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25);
+            box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25);
+  }
+  
+  .Button.disabled, .Button:disabled {
+    cursor: not-allowed;
+    opacity: .65;
+  }
+  
+  .Button:active, .Button.active {
+    background-image: none;
+  }
+  
+  a.Button.disabled,
+  fieldset[disabled] a.Button {
+    pointer-events: none;
+  }
+  
+  .Button-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+  }
+  
+  .Button-primary:hover {
+    color: #fff;
+    background-color: #025aa5;
+    border-color: #01549b;
+  }
+  
+  .Button-primary:focus, .Button-primary.focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+            box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+  }
+  
+  .Button-primary.disabled, .Button-primary:disabled {
+    background-color: #0275d8;
+    border-color: #0275d8;
+  }
+  
+  .Button-primary:active, .Button-primary.active,
+  .show > .Button-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #025aa5;
+    background-image: none;
+    border-color: #01549b;
+  } */
+  

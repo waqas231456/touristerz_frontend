@@ -1,5 +1,6 @@
 import { Button } from "@/components";
 import style from "@/styles/Login.module.css";
+import buttonStyle from '@/styles/Button.module.css'
 import Link from "next/link";
 import { useState } from "react";
 import axios from "axios";
@@ -48,7 +49,7 @@ function ForgotPassword() {
                 onChange={handleChange}
               />
 
-              <Button name="Send" handleChange={handleSubmit} />
+              <Button name="Send" handleChange={handleSubmit} button={buttonStyle.button}/>
 
               <h4 className={style.p1}>
                 Note:Forgot link will be send to the above email

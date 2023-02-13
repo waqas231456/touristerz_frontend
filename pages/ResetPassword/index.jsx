@@ -1,6 +1,7 @@
 import { Button } from "@/components";
 import style from "@/styles/Login.module.css";
 import Link from "next/link";
+import buttonStyle from '@/styles/Button.module.css'
 import { useState } from "react";
 
 function ResetPassword() {
@@ -62,7 +63,7 @@ function ResetPassword() {
                 value={formData.confirm_password}
                 onChange={handleChange}
               />
-              <Button name="Submit" handleChange={handleSubmit} />
+              <Button name="Submit" handleChange={handleSubmit}  button={buttonStyle.button}/>
               
             </form>
           </div>

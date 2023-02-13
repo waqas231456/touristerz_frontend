@@ -2,6 +2,7 @@ import { Button } from "@/components";
 import style from "@/styles/Login.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import buttonStyle from '@/styles/Button.module.css'
 import axios from "axios";
 function AddCategory() {
   const [formData, setFormData] = useState({
@@ -54,7 +55,7 @@ function AddCategory() {
                 value={formData.description}
                 onChange={handleChange}
               />
-              <Button name="Submit" handleChange={handleSubmit} />
+              <Button name="Submit" handleChange={handleSubmit}  button ={buttonStyle.button}/>
             </form>
           </div>
         </div>

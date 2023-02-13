@@ -1,8 +1,11 @@
 import { Button } from "@/components";
 import Style from "./style.module.css";
+import buttonStyle from '@/styles/Button.module.css'
 import Link from "next/link";
 import { useState } from "react";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { selectAuthState } from "@/store/authSlice";
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -18,6 +21,9 @@ function Signup() {
     console.log(role);
     setFormData({ ...formData, roles_id: role });
   };
+  // const handleSelect1 = (role) => {
+  //  useDispatch(setAuthState({authState:true}))
+  // };
 
   const handleChange = (event) => {
     setFormData({
@@ -40,6 +46,8 @@ function Signup() {
       console.log(err);
     }
   };
+  // const authState = useSelector(selectAuthState)
+  // const dispatch = useDispatch()
   return (
     <>
       <div className={Style.log}>
@@ -101,7 +109,7 @@ function Signup() {
                 onChange={handleChange}
               />
 
-              <Button name="Sign Up" handleChange={handleSubmit} />
+              <Button name="Sign Up" handleChange={handleSubmit} button={buttonStyle.button}/>
               <p className={Style.p}>
                 Already have account ?{" "}
                 <Link style={{ color: "#FFA17A" }} href="/Login">
@@ -112,6 +120,8 @@ function Signup() {
           </div>
         </div>
       </div>
+      {/* <h1>{authState ? 'loggedIn':'logged Out'}</h1>
+      <button onClick={handleSelect1}>Change State</button> */}
     </>
   );
 }

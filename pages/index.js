@@ -1,7 +1,7 @@
-import Head from 'next/head'
+import { Card, Nav, UserDashboard } from '@/components'
 
-import { UserDashboard } from '@/components'
 import Head from 'next/head'
+import ManageProfile from './ManageProfile'
 
 export default function Home() {
   return (
@@ -13,7 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <UserDashboard/>
+        <>
+        <Card/>
+        </>
+      
       </main>
     </>
   )
