@@ -18,6 +18,7 @@ function ManageProfile() {
     cnic: "",
     city: "",
     status: "",
+    roles_id:""
   });
 
   useEffect(() => {
