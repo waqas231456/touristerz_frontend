@@ -1,6 +1,6 @@
-import { Card, Nav, UserDashboard } from '@/components'
 
 import Head from 'next/head'
+import { Card, Nav, UserDashboard } from '@/components'
 import ManageProfile from './ManageProfile'
 
 export default function Home() {

@@ -10,18 +10,18 @@
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid #ffa17a;
+    /* border: 1px solid #ffa17a; */
     
   }
   
   .td {
-    border: 1px solid #ffa17a;
+    border: 5px solid rgb(165, 65, 65);
     text-align: left;
     padding: 15px;
     
   }
   .th {
-    border: 1px solid #ffa17a;
+    border: 4px solid rgb(165, 65, 65);
     text-align: left;
     padding: 15px;
   
@@ -39,3 +39,7 @@
     text-align: center;
    
   }
+
+  /* .review{
+    /* background-color: #133eff; */
+  

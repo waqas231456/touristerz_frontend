@@ -4,6 +4,7 @@ import Avatar from "./avator";
 
 import sidebarStyle from "@/styles/sidebar.module.css";
 import Link from "next/link";
+import Button from "../Button";
 import { useState } from "react";
 // import Button from "./Buuton";
 function Sidebar() {
@@ -32,60 +33,27 @@ function Sidebar() {
           <h3> Hamayoun Mushtaq </h3>
         </div>
         <div>
-          <Link href="/Dashboard" legacyBehavior>
-            <button className={sidebarStyle.button} hidden={user}>
-              DashBoard
-            </button>
+          <Link href="/Dashboard" >
+            <Button button={sidebarStyle.button} name="Dashboard" />
+            
           </Link>
           <br></br>
-          <Link href="/Booking" legacyBehavior>
-            <button className={sidebarStyle.button} hidden={user}>
-              {" "}
-              Booking Order{" "}
-            </button>
+          <Link href="/Booking" >
+          <Button button={sidebarStyle.button} name="Successful Booking" />
+            
           </Link>
           <br></br>
-          <Link href="/pending" legacyBehavior>
-            <button className={sidebarStyle.button} hidden={user}>
-              {" "}
-              Pending Order{" "}
-            </button>
+          <Link href="/pending" >
+          <Button button={sidebarStyle.button} name=" Pending Booking" />
+           
           </Link>
           <br></br>
-          <Link href="/Cancelled" legacyBehavior>
-            <button className={sidebarStyle.button} hidden={user}>
-              {" "}
-              Cancelled Order{" "}
-            </button>
+          <Link href="/Cancelled" >
+          <Button button={sidebarStyle.button} name="Cancelled Booking" />
           </Link>
-          <br></br>
-          <Link href="/Dashboard" legacyBehavior>
-            <button className={sidebarStyle.button} hidden={admin}>
-              Admin DashBoard
-            </button>
-          </Link>
-          <br></br>
-          <Link href="/Booking" legacyBehavior>
-            <button className={sidebarStyle.button} hidden={admin}>
-              Users
-            </button>
-          </Link>
-          <br></br>
-          <Link href="/Review" legacyBehavior>
-            <button className={sidebarStyle.button} hidden={admin}>
-              Categories
-            </button>
-          </Link>
-          <br></br>
+        
 
-          {/* <p style={{ marginLeft: "8%" }}>
-          
-            Setting
-          </p>
-          <p style={{ marginLeft: "8%" }}>
-          
-            Logout
-          </p> */}
+       
         </div>
       </div>
     </>

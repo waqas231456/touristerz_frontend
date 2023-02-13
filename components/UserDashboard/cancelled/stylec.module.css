@@ -11,18 +11,18 @@
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid #ffa17a;
+    border: 6px solid rgb(165, 65, 65);
     
   }
   
   .td {
-    border: 1px solid #ffa17a;
+    border: 3px solid rgb(165, 65, 65);
     text-align: left;
     padding: 15px;
     
   }
   .th {
-    border: 1px solid #ffa17a;
+    border: 5px solid rgb(165, 65, 65);;
     text-align: left;
     padding: 15px;
     

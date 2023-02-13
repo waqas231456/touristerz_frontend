@@ -3,6 +3,7 @@ import axios from "axios";
 import Layout from "../Layout";
 import Style from "./styleb.module.css";
 import { useEffect } from "react";
+import Link from "next/link";
 function Booking() {
   const [data, setData] = useState([]);
 
@@ -10,7 +11,7 @@ function Booking() {
     // console.log("i amahere")
     const getdata = async () => {
       try {
-        axios.get(`http://localhost:5000/api/user/3`).then((res) => {
+        axios.get(`http://localhost:5000/api/user/4`).then((res) => {
           console.log(res.data);
           setData(res.data);
         });
@@ -25,7 +26,7 @@ function Booking() {
     <Layout>
       <div className={Style.Booking}>
         <div>
-          <h1 className={Style.h1}>Booked Tours</h1>
+          <h1 className={Style.h1}> Successful Booked </h1>
           <table className={Style.table}>
             <thead>
               <tr className={Style.tr}>
@@ -34,7 +35,7 @@ function Booking() {
                 <th className={Style.th}>post_id</th>
                 <th className={Style.th}>status</th>
                 <th className={Style.th}>user_id</th>
-               
+                <th className={Style.th}>Action</th>
 
               </tr>
             </thead>
@@ -47,6 +48,9 @@ function Booking() {
 
                   <td className={Style.td}>{data.status}</td>
                   <td className={Style.td}>{data.user_id}</td>
+                 <Link  href="/Review" >
+                 <div className={Style.td}>Review</div>
+                  </Link>
                 </tr>
               ))}
             </tbody>
