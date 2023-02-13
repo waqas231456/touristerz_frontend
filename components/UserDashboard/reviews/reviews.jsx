@@ -70,7 +70,7 @@ function Review() {
           </div>
         </div>
 
-        <Button name="Submit"/>
+        <Button  button={Style.button} name="Submit"/>
       </form>
     </Layout>
   );

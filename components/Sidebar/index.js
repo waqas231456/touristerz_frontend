@@ -4,6 +4,7 @@ import Avatar from "./avator";
 
 import sidebarStyle from "@/styles/sidebar.module.css";
 import Link from "next/link";
+import Button from "../Button";
 // import Button from "./Buuton";
 function Sidebar() {
   return (
@@ -19,35 +20,27 @@ function Sidebar() {
           <h3> Hamayoun Mushtaq </h3>
         </div>
         <div>
-          <Link href="/Dashboard" legacyBehavior>
-            <button className={sidebarStyle.button}>DashBoard</button>
+          <Link href="/Dashboard" >
+            <Button button={sidebarStyle.button} name="Dashboard" />
+            
           </Link>
           <br></br>
-          <Link href="/Booking" legacyBehavior>
-            <button className={sidebarStyle.button}> Successful Booking  </button>
+          <Link href="/Booking" >
+          <Button button={sidebarStyle.button} name="Successful Booking" />
+            
           </Link>
           <br></br>
-          <Link href="/pending" legacyBehavior>
-            <button className={sidebarStyle.button}> Pending Booking </button>
+          <Link href="/pending" >
+          <Button button={sidebarStyle.button} name=" Pending Booking" />
+           
           </Link>
           <br></br>
-          <Link href="/Cancelled" legacyBehavior>
-            <button className={sidebarStyle.button}> Cancelled Booking </button>
+          <Link href="/Cancelled" >
+          <Button button={sidebarStyle.button} name="Cancelled Booking" />
           </Link>
-          <br></br>
-          {/* <Link href="/Review" legacyBehavior>
-            <button className={sidebarStyle.button}>Reviews</button>
-          </Link> */}
-          <br></br>
+        
 
-          {/* <p style={{ marginLeft: "8%" }}>
-          
-            Setting
-          </p>
-          <p style={{ marginLeft: "8%" }}>
-          
-            Logout
-          </p> */}
+       
         </div>
       </div>
     </>
