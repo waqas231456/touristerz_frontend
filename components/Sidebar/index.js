@@ -11,14 +11,14 @@ function Sidebar() {
   const [admin, setAdmin] = useState(false);
   const [user, setUser] = useState(true);
 
-  // const role = localStorage.getItem("role")
-  // if(role== "admin"){
-  //   setadmin(true)
-  //   console.log(admin);
-  // }else if (role== "Service Provider"){
-  //   setData(true)
-  //   console.log(data);
-  // }
+  const role = localStorage.getItem("role")
+  if(role== "admin"){
+    setadmin(true)
+    console.log(admin);
+  }else if (role== "Service Provider"){
+    setData(true)
+    console.log(data);
+  }
 
   return (
     <>
