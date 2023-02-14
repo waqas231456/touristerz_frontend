@@ -1,0 +1,118 @@
+.dashboard {
+  width: 90%;
+
+  /* background-color: antiquewhite;  */
+  margin-top: -8%;
+
+  padding: 1%;
+  margin-left: 5px;
+}
+
+.set {
+  display: flex;
+  float: right;
+  font-family: "Poppins";
+  font-style: "normal";
+  font-weight: "600px";
+  font-size: "58px";
+  line-height: "87px";
+  padding-top: "5px";
+}
+
+.text {
+  color: white;
+}
+
+.avator {
+  float: right;
+  margin-right: 65px;
+  height: 70px;
+  width: 30%;
+  margin-top: 13px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.flex1 {
+  width: 40%;
+  margin: 0 5% 0 0;
+}
+.flex2 {
+  width: 40%;
+  margin: 0 5% 0 0;
+}
+.Card1 {
+  width: 114%;
+  margin: 10% 5% 10% 0;
+  padding: 5px;
+  height: 42%;
+  text-align: left;
+  box-shadow: 8px 8px 8px #ffa17a;
+  border-radius: 10px;
+  background-color: rgb(165, 65, 65);
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+}
+
+.Card2 {
+  width: 114%;
+  height: 42%;
+  margin: 10% 5% 10% 25%;
+  padding: 5px;
+  box-shadow: 8px 8px 8px #ffa17a;
+  border-radius: 10px;
+  background-color: rgb(165, 65, 65);
+  border: 3px solid #ffa17a;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.Avator {
+  height: 43px;
+}
+
+.ul {
+  padding: 0;
+  list-style: none;
+  background: #f2f2f2;
+  float: right;
+  width: 0%;
+  margin-left: 150%;
+  height: 43;
+}
+.ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: right;
+}
+.ul li a {
+  display: block;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+.ul li a:hover {
+  color: #000000;
+  background: white;
+}
+.ul li ul.dropdown {
+  min-width: 125px; 
+  background: rgb(212, 209, 209);
+  display: none;
+  position: absolute;
+  /* z-index: 999; */
+  right: 3px;
+  height: 200%;
+  border-radius: 15px;
+}
+.ul li:hover ul.dropdown {
+  display: block; 
+}
+.ul li ul.dropdown li {
+  display: block;
+
+  padding: 5px 0 5px 0;
+}

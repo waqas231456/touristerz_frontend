@@ -41,8 +41,7 @@ function Login() {
     //     localStorage.setItem("token",res.data.token);
     //     const role = localStorage.getItem("roles_id");
     //     const status = localStorage.getItem("status");
-    //     console.log("role :", role);
-
+    //     console.log("role :", role)
     //     if (role == 1) {
     //       if (status == "Active") {
     //         alert("Active Role 1");

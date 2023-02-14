@@ -14,8 +14,9 @@ function Dashboard() {
           <div className={Style.flex2}>
             <div className={Style.Card1} style={{ textAlign: "left" }}>
               {/* <FontAwesomeIcon icon="faYoutube" style={{float:"right", marginRight:"9%", paddingTop:"3%"}}/> */}
+              <h1 className={Style.text}>Number</h1>
               <h3 className={Style.text}>Agencey</h3>
-              <h6 className={Style.text}>Number of Registered Agencey</h6>
+             
             </div>
 
 

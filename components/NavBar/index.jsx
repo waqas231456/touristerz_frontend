@@ -19,7 +19,7 @@ function Nav() {
           </a>
         </li>
         <li className={style.li}>
-          <a herf="About">About</a>
+          <a herf="Services">Services</a>
         </li>
         <li className={style.li}>
           <a herf="Contact">Contact</a>

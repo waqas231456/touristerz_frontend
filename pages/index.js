@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import { Card, Nav, UserDashboard } from '@/components'
 import ManageProfile from './ManageProfile'
+import ServiceDashboard from './ServiceDashboard'
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
       </Head>
       <main>
         <>
-        <Card/>
+        {/* <Card/> */}
+        {/* <ManageProfile /> */}
+        <ServiceDashboard />
         </>
       
       </main>

@@ -12,7 +12,9 @@ const LayoutHome = ({children}) => {
     <>
    
       <Nav/>
-       <div className={style.box}>{children}</div> 
+       <div className={style.box}>
+        {children}
+        </div> 
       
        <Footer/>
     
