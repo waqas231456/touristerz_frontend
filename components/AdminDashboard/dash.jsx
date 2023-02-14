@@ -7,7 +7,6 @@ function AdminDashboard() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // console.log("i amahere")
 
     const getdata = async () => {
       try {

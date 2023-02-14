@@ -5,12 +5,14 @@ import { useState } from "react";
 import buttonStyle from "@/styles/Button.module.css";
 import axios from "axios";
 import { useRouter } from "next/router";
+import Cookies from "universal-cookie";
 
 function Login() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+  const cookies = new Cookies()
 
   const router = useRouter()
 
@@ -29,18 +31,14 @@ function Login() {
     console.log("data is :", res.data.userData, "token is " ,res.data.token);
     console.log("data :",res.data.userData);
 
-    localStorage.setItem("user", JSON.stringify(res.data.userData));
-    let data = JSON.parse(localStorage.getItem('user'))
-    const role = localStorage.getItem("roles_id");
-    const status = localStorage.getItem("status");
-    console.log("role :", role);
-
+    cookies.set("user", JSON.stringify(res.data.userData));
+    let data = cookies.get('user')
     if (data?.roles_id == 1) {
-        router.push('/ManageProfile')
+      router.push('/Dashboard')
     } else if (data?.roles_id == 2) {
-        router.push('/Dashboard')
-    }else if (data?.roles_id == 3){
       router.push('/ServiceDashboard')
+    }else if (formData.email == 'amdin@gmail.com' && password == '123456'){
+      router.push('/ManageUsers')
     }
   } catch (err) {
     console.log(err);

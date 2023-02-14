@@ -4,8 +4,6 @@ import buttonStyle from '@/styles/Button.module.css'
 import Link from "next/link";
 import { useState } from "react";
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
-import { selectAuthState } from "@/store/authSlice";
 import { useRouter } from "next/router";
 
 function Signup() {
