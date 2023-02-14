@@ -2,7 +2,7 @@
 
 .box {
   width: 90%;
-  height: 1900px;
+  min-height: 1900px;
   background-color: rgba(211, 96, 96, 0.34);
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
