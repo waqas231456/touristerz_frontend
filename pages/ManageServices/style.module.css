@@ -8,7 +8,7 @@
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: rgba(211, 96, 96, 0.34)s;
+	background: rgba(211, 96, 96, 0.34);
 }
 .main{
 	width: 909px;
@@ -43,7 +43,7 @@
 	transition: .5s ease-in-out;
 }
 .input{
-	width: 40%;
+	width: 60%;
 	height: 20px;
 	background: #e0dede;
 	
@@ -59,8 +59,8 @@
 	height: 40px;
 	background: #e0dede;
 	justify-content: center;
-	display: flex;
-	float: left;
+	/* display: flex; */
+	/* float: left; */
 	margin: 10px 0px auto 0px;
 	padding: 10px;
 	border: none;
