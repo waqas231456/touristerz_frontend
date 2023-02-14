@@ -8,7 +8,6 @@ function Booking() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // console.log("i amahere")
     const getdata = async () => {
       try {
         axios.get(`http://localhost:5000/api/user/3`).then((res) => {

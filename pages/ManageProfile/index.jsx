@@ -82,27 +82,8 @@ function ManageProfile() {
         console.log(formData);
       } catch (error) {
         console.error(error);
-        //   }
       }
     }
-
-    // http://localhost:5000/api/user/1
-    // const handleSubmit = (event) => {
-    //   event.preventDefault();
-    //   // Add logic to save form data here
-    //   try {
-    //     axios
-    //       .post(`https://jsonplaceholder.typicode.com/users`, { formData })
-    //       .then((res) => {
-    //         console.log(res);
-    //         console.log(res.data);
-    //         setFormData(res.data);
-    //       });
-    //     console.log(formData);
-    //   } catch (error) {
-    //     console.error(error);
-    //   }
-    // };
     return (
       <>
         <div className={Style.log}>

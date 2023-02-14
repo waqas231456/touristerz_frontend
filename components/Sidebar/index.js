@@ -11,7 +11,7 @@ function Sidebar() {
   const [services, setServices] = useState(true)
   const [userData, setUserData] = useState([])
   useEffect(()=>{
-    const data = localStorage.getItem("role")
+    const data = localStorage.getItem("user")
     setUserData(data)
   },[])
   if(userData?.roles_id== 1){

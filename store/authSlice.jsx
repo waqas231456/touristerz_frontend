@@ -22,11 +22,7 @@ export const signIn = createAsyncThunk("signin", async (body) => {
     body: JSON.stringify(body),
   });
   const result = res.json();
-  // const { name } = await result;
-  // console.log(name);
-
-
-  // localStorage.setItem("name", name);
+  
   return await result;
 });
 
@@ -51,13 +47,6 @@ export const authSlice = createSlice({
       localStorage.clear();
       state.auth = false;
     },
-
-    // Action to set the authentication status
-    // setAuthState(state, action) {
-    //   state.authState = action.payload;
-    // },
-
-    // Special reducer for hydrating the state. Special case for next-redux-wrapper
     extraReducers: {
       [signIn.pending]: (state, action) => {
         state.loading = true;
@@ -85,13 +74,6 @@ export const authSlice = createSlice({
         state.loading = true;
         state.error = error;
       },
-
-      // [HYDRATE]: (state, action) => {
-      //   return {
-      //     ...state,
-      //     ...action.payload.auth,
-      //   };
-      // },
     },
   },
 });
