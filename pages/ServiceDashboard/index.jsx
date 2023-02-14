@@ -1,17 +1,21 @@
 import { Layout } from '@/components'
 import Image from 'next/image';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from "next/link";
 import Style from "./style.module.css";
-import Router from "next/router";
 import profile from "./profile.jpg";
+import axios from 'axios';
 
 const ServiceDashboard = () => {
-  const chnagehandle = () => {
-    localStorage.removeItem("isLoggedIn");
-    Router.push("/Cancelled");
-    Router.push("/pending");
-  };
+  const [posts, setPosts] = useState([])
+  const getPost = async() => {
+    const response = await axios.get('http://locahost:3000/api/posts/')
+    setPosts(response)
+  }
+
+  useEffect(()=>{
+    axios.get('http://locahost:3000/api/posts/')
+  },[])
   return (
     <Layout>
     <div className={Style.dashboard}>
@@ -23,8 +27,8 @@ const ServiceDashboard = () => {
                 src={profile}
                 alt="HM"
                 style={{
-                  height: "40px",
-                  width: "30px",
+                  height: 50,
+                  width: 50,
                   borderRadius: "40px",
                   marginLeft: "90px",
                   marginBottom: "1px",
@@ -35,7 +39,7 @@ const ServiceDashboard = () => {
               <li>
                 <Link
                   href="#"
-                  onClick={chnagehandle}
+                  // onClick={}
                   style={{ paddingRight: "20px", float: "left" }}
                 >
                   Manage Profile
@@ -49,7 +53,7 @@ const ServiceDashboard = () => {
                 <Link
                   href="#"
                   style={{ paddingRight: "20px", float: "left" }}
-                  onClick={chnagehandle}
+                  // onClick={chnagehandle}
                 >
                   Log Out
                 </Link>
@@ -74,7 +78,7 @@ const ServiceDashboard = () => {
 
       <div className={Style.flex}>
           <div className={Style.Card1} style={{ textAlign: "left" }}>
-            <h1 className={Style.text}>Number</h1>
+            <h1 className={Style.text}>{posts.length}</h1>
             <h3 className={Style.text}>Services</h3>
             <span className={Style.text}> check at detail of booked</span>
             <br></br>

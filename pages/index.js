@@ -15,9 +15,9 @@ export default function Home() {
       </Head>
       <main>
         <>
-        <Card/>
+        {/* <Card/> */}
         {/* <ManageProfile /> */}
-        {/* <ServiceDashboard /> */}
+        <ServiceDashboard />
         </>
       
       </main>
