@@ -6,6 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { selectAuthState } from "@/store/authSlice";
+import { useRouter } from "next/router";
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -21,9 +22,7 @@ function Signup() {
     console.log(role);
     setFormData({ ...formData, roles_id: role });
   };
-  // const handleSelect1 = (role) => {
-  //  useDispatch(setAuthState({authState:true}))
-  // };
+  
 
   const handleChange = (event) => {
     setFormData({
@@ -33,21 +32,25 @@ function Signup() {
     console.log("data", formData);
   };
 
+  const router = useRouter()
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
     try {
-      const res = await axios.post(
+      const {data} = await axios.post(
         "http://localhost:5000/api/sign-up",
         formData
       );
+      setFormData(formData)
+      if(formData){
+        router.push('/Login')
+      }
       console.log("data :", res.data);
     } catch (err) {
       console.log(err);
     }
   };
-  // const authState = useSelector(selectAuthState)
-  // const dispatch = useDispatch()
+  
   return (
     <>
       <div className={Style.log}>
@@ -62,9 +65,8 @@ function Signup() {
                   placeholder="Select User Type"
                   onChange={(e) => handleSelect(e.target.value)}
                 >
-                  <option value="1">User</option>
-                  <option value="2">Agency</option>
-                  <option value="3">Service</option>
+                  <option value="1" defaultChecked>User</option>
+                  <option value="2">Service</option>
                 </select>
               </div>
 
